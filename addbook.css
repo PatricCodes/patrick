@@ -1,0 +1,168 @@
+
+main{
+    height: auto;
+}
+
+.addbook{
+    background-color:transparent;
+    border: 1px solid rgb(41, 31, 9);
+    height: auto;
+    box-sizing: border-box;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: .3s ease;
+
+} 
+.addbook:hover{
+    background-color:#202c41;
+}
+
+.addbook i{
+  
+    color: #cfcfcf;
+    font-size: 40px;
+    padding: 10px;
+}
+.addbook a{
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #cfcfcf;
+
+}
+
+/* form in book add start here */
+
+form{
+   box-sizing: border-box;
+   overflow: hidden;
+   padding-bottom: 16px;
+   margin: auto;
+   margin-top: 5%;
+   margin-bottom: 40px;
+   text-align: center;
+   width: 70%;
+   background: #081b29;
+   box-shadow: 4px 0 10px #202c41;
+    
+}
+
+::placeholder{
+    color: #fff;
+}
+.headerform h1{
+    color: #cfcfcf;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid ;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.input{
+    background-color: transparent;
+}
+
+/* .input input[type=text]{
+    padding: 5px;
+    width: 80%;
+    border: 1px solid  rgb(228, 172, 30);
+    margin: 10px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+} */
+
+
+.text{
+    padding: 5px;
+    width: 80%;
+    margin: 10px;
+    outline: none;
+    font-weight: bold;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.input input[type=submit]{
+
+   margin-left: 47px;
+   margin-top: 20px;
+   padding: 8px 20px;
+   font-family: sans-serif;
+   font-size: 20px;
+   color: #cfcfcf;
+   float: left;
+   border: 1px solid rgb(228, 172, 30);
+   background: transparent;
+   transition: .3s ease;
+
+}
+.input input[type=submit]:hover{
+    background-color:#202c41;
+    color: rgb(228, 172, 30);
+    border: none;
+    box-shadow: 5px 0px 10px rgba(54, 53, 53, 0.4);
+}
+
+
+/* textinput here */
+
+.textinput{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color:transparent;
+    column-gap: 20px;
+    box-sizing: border-box;
+}
+
+.textinput .text{
+    width: 300px;
+    background-color: #202c41;
+    padding: 0;
+}
+
+.textinput .text input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    background-color: transparent;
+    color: #cfcfcf;
+    font-family: sans-serif;
+    font-size: 18px;
+    border: none;
+    transition: .3s ease;
+    border-radius: 3px;
+    padding: 8px;
+}
+.textinput .text input:focus{
+    border: 1px solid  rgb(228, 172, 30);
+}
+
+/* ADD BOOK FORM RESPONSIVE */
+
+@media (max-width:1021px) {
+    .textinput .text{
+        width: 100%;
+    }  
+
+    .textinput{
+        flex-direction: column;
+        width: 300px;
+        padding-left: 40px;
+    }
+
+    form{
+        width: 400px;
+        padding-bottom: 10px;
+
+    }
+    
+}
